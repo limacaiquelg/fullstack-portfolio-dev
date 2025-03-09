@@ -1,0 +1,142 @@
+#intro {
+  background-image: url(../assets/Background_Intro.png);
+  background-repeat: round;
+  background-size: cover;
+  height: 750px;
+  padding-top: 120px;
+
+  header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px auto 80px;
+    max-width: 680px;
+
+    #avatar {
+      margin-bottom: 56px;
+      position: relative;
+
+      #avatar-pic {
+        border: 2px solid var(--principal-red);
+        border-radius: 50%;
+        height: 112px;
+        object-fit: cover;
+        padding: 8px;
+        width: 112px;
+      }
+
+      #avatar-tag {
+        height: 32px;
+        left: 78px;
+        position: absolute;
+        top: 78px;
+        width: 32px;
+      }
+    }
+  
+    #description {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+      p:nth-child(1) {
+        color: var(--base-gray-500);
+        font: var(--subtitle);
+        margin-bottom: 8px;
+        text-align: center;
+
+        span {
+          color: var(--principal-red);
+        }
+      }
+
+      h1:nth-child(2) {
+        color: var(--base-gray-600);
+        font: var(--title-lg);
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      p:nth-child(3) {
+        color: var(--base-gray-400);
+        font: var(--text-sm);
+        text-align: center;
+      }
+    }
+  }
+
+  #techs {
+    align-items: center;
+    display: flex;
+    flex-direction: row; 
+    gap: 16px;
+    justify-content: center;
+    list-style-type: none;
+
+    li {
+      align-items: center;
+      background-color: var(--base-gray-300);
+      border-radius: 999px;
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      padding: 8px 16px;
+
+      .tech-icon {
+        height: 24px;
+        mask-size: cover;
+        width: 24px;
+      }
+      
+      .tech-title {
+        color: var(--base-gray-500);
+        font: var(--text-md);
+      }
+    }
+
+    #github-icon {
+      background-color: var(--base-gray-500);
+      mask-image: url(../assets/tech-icons/GitHub.svg);
+    }
+
+    #html-icon {
+      background-color: var(--principal-red);
+      mask-image: url(../assets/tech-icons/HTML.svg);
+    }
+
+    #css-icon {
+      background-color: var(--principal-blue);
+      mask-image: url(../assets/tech-icons/CSS.svg);
+    }
+
+    #js-icon {
+      background-color: var(--principal-yellow);
+      mask-image: url(../assets/tech-icons/JavaScript.svg);
+    }
+
+    #react-icon {
+      background-color: var(--principal-blue);
+      mask-image: url(../assets/tech-icons/React.svg);
+    }
+
+    #node-icon {
+      background-color: var(--principal-green);
+      mask-image: url(../assets/tech-icons/Node.js.svg);
+    }
+   }
+
+  #rolagem {
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+
+    span {
+      height: 32px;
+      mask-size: cover;
+      width: 32px;
+      background-color: var(--base-gray-400);
+      mask-image: url(../assets/icons/CaretDoubleDown.svg);
+    }
+  }
+}
